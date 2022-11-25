@@ -12,6 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddBiriyaniComponent } from './add-biriyani/add-biriyani.component';
 import { AddSouthComponent } from './add-south/add-south.component';
 import { AddchineseComponent } from './addchinese/addchinese.component';
+import { AddVegComponent } from './add-veg/add-veg.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -40,6 +41,10 @@ const myRoute:Routes=[
   {
     path:"chinese",
     component:AddchineseComponent
+  },
+  {
+    path:"veg",
+    component:AddVegComponent
   }
   
 
@@ -54,7 +59,8 @@ const myRoute:Routes=[
     NavbarComponent,
     AddBiriyaniComponent,
     AddSouthComponent,
-    AddchineseComponent
+    AddchineseComponent,
+    AddVegComponent
   ],
   imports: [
     BrowserModule,
