@@ -8,7 +8,27 @@ import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+const myRoute:Routes=[
+  {
+    path:"",
+    component:HomeComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+  {
+    path:"signup",
+    component:SignupComponent
+  },
+  {
+    path:"signin",
+    component:SigninComponent
+  },
+  
 
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +40,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
