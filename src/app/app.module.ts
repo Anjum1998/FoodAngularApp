@@ -9,6 +9,7 @@ import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AddBiriyaniComponent } from './add-biriyani/add-biriyani.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -36,7 +37,8 @@ const myRoute:Routes=[
     SignupComponent,
     SigninComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddBiriyaniComponent
   ],
   imports: [
     BrowserModule,
