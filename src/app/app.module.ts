@@ -13,6 +13,7 @@ import { AddBiriyaniComponent } from './add-biriyani/add-biriyani.component';
 import { AddSouthComponent } from './add-south/add-south.component';
 import { AddchineseComponent } from './addchinese/addchinese.component';
 import { AddVegComponent } from './add-veg/add-veg.component';
+import { FormsModule } from '@angular/forms';
 const myRoute:Routes=[
   {
     path:"",
@@ -65,7 +66,8 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class SigninComponent {
 
+  number=""
+  email=""
+  password=""
+
+  readValue=()=>
+  { let data:any={
+    "number":this.number,"email":this.email,"password":this.password
+  }
+  console.log(data)
+}
+
 }
